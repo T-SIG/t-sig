@@ -1,0 +1,12 @@
+.register{
+
+    background-color: aquamarine;
+    border-radius: 3px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.register:hover{
+    color: white;
+    background-color: rgb(164, 88, 88);
+}
