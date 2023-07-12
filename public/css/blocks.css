@@ -944,9 +944,9 @@ div:hover > .btn-reverse-bg-green {
 
 .video-control {
   padding: 15px; }
-  .video-control img {
+  /* .video-control img {
     box-shadow: 10px 0 30px 0 rgba(215, 20, 58, 0.4);
-    border-radius: 20px; }
+    border-radius: 20px; } */
 
 .play-title {
   font-size: 20px; }
@@ -1773,8 +1773,8 @@ div:hover > .btn-reverse-bg-green {
   width: 100%; }
   .video-thumb .video-control {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    /* top: 50%;
+    left: 50%; */
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
