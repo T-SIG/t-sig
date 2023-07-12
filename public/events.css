@@ -1,6 +1,6 @@
 .register{
 
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     border-radius: 3px;
     margin-top: 30px;
     cursor: pointer;
@@ -47,29 +47,20 @@ video#video{
 }
 .header-info-par a{
     background-color: #fff;
-    color: #00a8b4;
+    /* color: #00a8b4; */
+    color: black;
     padding: 17px 45px;
     display: inline-block;
     margin-top: 25px;
     position: relative;
     overflow: hidden;
+    font-size: 1.2rem;
 }
 
-.header-info-par a:after{
-    content: "RegisterNow";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+.header-info-par a:hover{
     background-color: #00a8b4;
     color: #fff;
-    width: 0%;
-    height: 100%;
-    line-height: 50px;
-    transition: all 0.5s ease;
-}
-.header-info-par a:hover:after{
-    width: 100%;
+    transition: all 0.8s ease;
 }
 .header-info-par h1{
     font-size: 45px;

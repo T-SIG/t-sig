@@ -2442,10 +2442,10 @@ div:hover > .btn-reverse-bg-green {
     display: inline-block;
     vertical-align: bottom; }
 
-.case-item-content {
+/* .case-item-content {
   overflow: hidden;
   position: relative;
-  padding: 85px 20px 30px 0; }
+  padding: 85px 20px 30px 0; } */
   .case-item-content .title {
     color: #fff;
     margin-bottom: 40px;
