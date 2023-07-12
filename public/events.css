@@ -10,7 +10,9 @@
     color: white;
     background-color: rgb(164, 88, 88);
 }
-
+.title-event{
+    margin-top: 25px;
+}
 header{
     width: 100%;
     height: 100vh;
