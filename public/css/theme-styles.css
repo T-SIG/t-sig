@@ -1524,7 +1524,8 @@ body.crumina-grid .kc_col-of-5 {
       padding: 35px 0; } }
 
 .medium-padding100 {
-  padding: 20px 0; }
+  padding: 20px 0; 
+  background-color: #121212;}
   @media (max-width: 800px) {
     .medium-padding100 {
       padding: 35px 0; } }
@@ -6863,7 +6864,7 @@ nav li.menu-item-has-mega-menu ul.mega-menu-row li {
   padding: 35px 0;
   text-align: center;
   position: relative;
-  margin-top: 120px; }
+  background-color: #121212; }
   .sub-footer span {
     font-size: 14px;
     margin-bottom: 1px;
@@ -6880,7 +6881,7 @@ nav li.menu-item-has-mega-menu ul.mega-menu-row li {
 .content-wrapper {
   position: relative;
   z-index: 2;
-  background-color: #fff;
+  background-color: #121212;
   -webkit-margin-bottom-collapse: separate; }
 
 .block-footer-height {
