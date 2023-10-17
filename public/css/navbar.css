@@ -58,7 +58,7 @@ nav {
 	top: 0;
 	height: 70px;
 	padding: 0 1.5em;
-	background-color: rgb(255, 255, 255);
+	background-color: #121212;
 	font-family: 'Montserrat', sans-serif;
 }
 nav .logo {
@@ -81,7 +81,7 @@ nav .nav-item > a {
 	display: inline-block;
 	padding: 0 1.5em;
 	line-height: 70px;
-	color: #000;
+	color: #edf2fc;
 	text-decoration: none;
 }
 nav .nav-item > a:hover
@@ -113,7 +113,7 @@ nav .dropdown-menu {
 	
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	/* border-radius: .5em; */
-	background-color: #fff;
+	background-color: #212121;
 }
 nav .dropdown.show .dropdown-menu {
 	display: block;
@@ -127,13 +127,14 @@ nav .dropdown-item {
 	
 	/* font-size: 13px; */
 	padding: 10px 0px 10px 0px;
-	color: #000;
+	color: #edf2fc;
 	width: 200px;
 	
 	text-decoration: none;
 }
 nav .dropdown-item:hover{
-	background-color: rgb(150, 197, 197);
+	background-image: linear-gradient(62deg, #797535de 0%, #a17f22cd 100%);
+	color: #edf2fc;
 }
 nav .btn-hamburger {
 	display: none;
