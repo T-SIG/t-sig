@@ -26,6 +26,11 @@ header{
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: overlay;
 }
+header img{
+    max-width: 100%;
+    height: auto;
+    min-width: 400px;
+}
 
 /* video css */
 .video{
