@@ -96,7 +96,7 @@ html, body {
 
 body {
   background: #fff;
-  color: #4b5d73;
+  color: rgb(137, 130, 130);
   font-family: "Nunito", Arial, "Helvetica Neue", Helvetica, serif, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -525,7 +525,15 @@ blockquote {
   height: 1px;
   width: 1px;
   overflow: hidden; }
+#services{
+  /* background: linear-gradient(45deg,purple,rgb(67, 29, 29)red) !important; */
+  
+  
+}
+#bita{
+  background-color: rgb(40, 37, 37); /* Slate gray background */
 
+}
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -551,6 +559,10 @@ blockquote {
   outline: 0; }
 
 @media (max-width: 640px) {
+  #services{
+  background-color: linear-gradient(to right, red 30%, purple 70%);
+}
+
   ol li {
     font-size: 13px;
     padding-left: 20px; }
@@ -571,9 +583,17 @@ h1, .h1 {
   h1 a, .h1 a {
     color: inherit; }
   @media (max-width: 800px) {
+    #services{
+      background-color: linear-gradient(to right, red 30%, purple 70%);
+    }
+    
     h1, .h1 {
       font-size: 2em; } }
   @media (max-width: 640px) {
+    #services{
+  background-color: linear-gradient(to right, red 30%, purple 70%);
+}
+
     h1, .h1 {
       font-size: 1.8em; } }
   @media (max-width: 480px) {
@@ -657,7 +677,8 @@ h5, .h5 {
   font-size: 24px;
   line-height: 1.3em;
   font-weight: 700;
-  color: #273f5b;
+  /* color:linear-gradient(to right, red 30%, purple 70%) ; */
+  color: rebeccapurple;
   font-family: "Nunito", Arial, "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: 0.02em; }
   h5 a, .h5 a {
@@ -680,7 +701,7 @@ h6, .h6 {
   font-size: 18px;
   line-height: 1.3em;
   font-weight: 700;
-  color: #273f5b;
+  color:rebeccapurple;
   font-family: "Nunito", Arial, "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: 0.02em; }
   h6 a, .h6 a {
