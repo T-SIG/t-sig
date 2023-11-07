@@ -41,6 +41,324 @@
 	<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
 	<link rel="icon" href="./img/TSIG_logo_saffron-removebg-preview.png" type="image/gif" sizes="16x16">
 
+
+
+	<style>
+        /* Styling the body */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+		header button{
+			position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:white;
+  color: rgb(7, 7, 70);
+  font-weight: 600;
+  font-size: 40px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+		}
+		header h2{
+			position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+		
+		header button:hover{
+			background: rgb(7, 7, 70)  ;
+			color: white;
+		}
+        /* Styling section, giving background
+            image and dimensions */
+        section {
+            width: 100%;
+            height: 120vh;
+            background:
+                url(
+'./img/pyweek2.0/2023-11-07\ \(29\).png'
+                );
+            background-size: cover;
+        }
+        /* Styling the left floating section */
+        section .leftBox {
+            width: 50%;
+            height: 100%;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        /* Styling the background of 
+            left floating section */
+        section .leftBox .content {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            transition: .5s;
+        }
+        /* Styling the hover effect  
+            of left floating section */
+        section .leftBox .content:hover {
+            background:rgb(3, 3, 56);
+        }
+        /* Styling the header of left 
+            floating section */
+        section .leftBox .content h1 {
+			color: azure;
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            text-transform: uppercase;
+			text-align: center;
+        }
+		section .leftBox .content img {
+            margin: 0;
+            padding-top: 10px;
+            font-size: 50px;
+            height: 500px;
+			width: 400px;
+			padding-left: 100px;
+
+        }
+		section .leftBox .content  ul li{
+			font-size: 30px !important;
+			text-align: center;
+		}
+		section .leftBox .content  button{
+text-align: center;
+font-size: 30px;
+color: black;
+width:50% ;
+border-radius: 4px ;
+margin-left: 120px;
+		}
+
+		@media(max-width:1200px)
+
+{
+	header h2{
+		font-size: 95px;
+		top:40%;
+		padding-right: 0px;
+	}
+	header button{
+		width: 90%;
+		top: 75%;
+	}
+	body{
+		height: 100%;
+		background: url(./img/pyweek2.0/2023-11-07\ \(29\).png);
+		background-position: 800px;
+		background-size: 100%;
+		background-origin:unset;
+		background-position-x: center;
+	
+	}
+	section{
+		display: flex;
+		flex-direction: column;
+	}
+	section .leftBox{
+		padding: 0px;
+		width: 100%;
+
+	}
+	section .leftBox .content{
+		display: flex;
+		flex-direction: column;
+	}
+	section .leftBox .content img{
+		width: 100% !important;
+		height:400px ;
+		padding: 0px;
+	}
+	section .leftBox .content button{
+		margin-left: 0px;
+		width: 100%;
+	}
+
+}
+@media(max-width:480px)
+{
+	section{
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media(max-width:800px)
+{
+	section{
+		display: flex;
+		flex-direction: column;
+	}
+}
+		/* Styling the paragraph of 
+            left floating section */
+        section .leftBox .content p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+        /* Styling the three events section */
+        section .events {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            float: right;
+            box-sizing: border-box;
+        }
+        /* Styling the links of 
+        the events section */
+        section .events ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        /* Styling the lists of the event section */
+        section .events ul li {
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 80px;
+            margin: 10px 0;
+        }
+        /* Styling the time class of events section */
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+        /* Styling the hover effect
+            of events section */
+        section .events ul li:hover .time {
+            background: rgb(3, 3, 56);
+        }
+        /* Styling the header of time 
+            class of events section */
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 40px;
+            line-height: 30px;
+        }
+        /* Styling the texts of time 
+        class of events section */
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+ 
+        /* Styling the details 
+        class of events section */
+        section .events ul li .details {
+            padding: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+        /* Styling the header of the 
+        details class of events section */
+        section .events ul li .details h3 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+        /* Styling the lists of details 
+        class of events section */
+        section .events ul li .details p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        /* Styling the links of details
+        class of events section */
+        section .events ul li .details a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1.5px solid #262626;
+            margin-top: 8px;
+            font-size: 18px;
+            transition: .5s;
+        }
+        /* Styling the details class's hover effect */
+        section .events ul li .details a:hover {
+            background: #e91e63;
+            color: #fff;
+            border-color: #e91e63;
+        }
+		@media(max-width:1200px)
+{
+	section .events{
+		width: 100%;
+		
+	}
+	section .events ul{
+		width: 100%;
+		transform: none;
+		margin-top: 150px;
+		padding: 0px;
+		
+	}
+}
+    </style>
 </head>
 
 <body class="crumina-grid">
@@ -119,21 +437,22 @@
 
 		<!-- Tripple Image -->
 		<header>
-			<div class="container_1">
-				<div class="header-info-par">
-					<h1 class="typewrite" data-period="2000"
+			
+				<h2>PYWEEK 2.O</h2>
+		<a href="https://forms.gle/4rBVfsabBsvB6zWu7"><button>REGISTER NOW</button></a>		
+				<div class="header-info-par"> 
+					<!-- <h1 class="typewrite" data-period="2000"
 						data-type='["We Help You To Recover It Back","I fly because it releases my mind from the tyranny of petty things.","Every takeoff is optional, Every landing is mandatory."]'>
 					</h1>
 					<h1 class="text">UPCOMING EVENT</h1>
 					<h4 class="text">Register for the CADISM workshop</h4>
 					<a href="https://forms.gle/VSRkzi1GnCGSYDTX9" class="a"> Register Now </a>
-				</div>
-				<div class="video">
+				</div> -->
+				 <!-- <div class="video">
 					<video id="video" autoplay loop muted>
 						<source src="./img/Cadism teaser.mp4" style="width: 500px;" type="video/mp4" />
-					</video>
-				</div>
-			</div>
+					</video> -->
+				</div> 
 		</header>
 
 
@@ -177,46 +496,9 @@
 
 
 		<!-- cadism workshop -->
-		<section class="event">
-			<div class="crumina-module crumina-case-item" data-mh="case-item" style="height:100%; padding:10px;">
-				<a href="./img/Cadism.jpg" class="case-item__thumb js-zoom-image">
-					<img src="./img/Cadism.jpg" alt="case" style="height: 320px;width: 220px;">
-				</a>
-			</div>
-			<!-- <div class="square-colored bg-product-blue"></div> -->
-			<div class="case-item-content">
-				<h5 class="title-event"> YUP! WORKSHOP ON 3D Modelling , 3D Printing And PCB Designing</h5>
+		<!--  -->
 
-				<h5 style="color: azure;">T-SIG is back again with yet another exciting workshop!!</h5>
-				<a href="https://forms.gle/VSRkzi1GnCGSYDTX9" target="_blank"><button type="submit" class="register2"
-						target="_blank"> <strong> Register
-						</strong></button></a>
-
-				<br>
-				<br>
-				<!-- <p>Dates : 14th July to 15th July <br> -->
-				<b>Venue</b> : Will be shared soon..<br>
-				<b>Registration fee</b> :₹150/- only <br>
-				<!-- Registration fee : Rs400/- -->
-
-				<b>Duration</b> : 14th July to 15th July 2023🗓️
-				<br>
-				<b>Timings</b>: <br>
-				Day-1 : 2:00pm-5:00pm⏱️ <br>
-				Day-2 : 10:00pm-5:00pm⏱️
-				<br>
-				<b>Mode</b> : Offline
-
-				Secure your spot today!
-				</p>
-			</div>
-
-
-	</section>
-
-	</div>
-
-	<style>
+	<!-- <style>
 		.event {
 			display: flex;
 			flex-direction: row;
@@ -275,8 +557,148 @@
 				margin-top: 30px;
 			}
 		}
-	</style>
-
+	</style> -->
+	<section>
+        <div class="leftBox">
+            <div class="content">
+                <!-- <h1>
+                    PYWEEK 2.0
+                </h1> -->
+               <img src="./img/pyweek2.0/poster2.jfif">
+			   
+				<ul>
+					<li>
+						Date:13th Nov 2023
+					</li>
+					<li>
+						time:8-9pm
+					</li>
+					<li>
+						venue:online
+					</li>
+					
+				</ul>
+			   
+	<a href="https://forms.gle/4rBVfsabBsvB6zWu7"><button>REGISTER</button></a>		   
+            </div>
+        </div>
+        <div class="events">
+            <ul>
+                <li>
+                    <div class="time">
+                        <h2>
+                            12<br><span>NOV</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            INTRODUCTON
+                        </h3>
+                      
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+				<li>
+                    <div class="time">
+                        <h2>
+                            13<br><span>NOV</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            DATA STRUCTURES
+                        </h3>
+                      
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+				<li>
+                    <div class="time">
+                        <h2>
+                            14<br><span>NOV</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            LIBRARIES
+                        </h3>
+                      
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+				<li>
+                    <div class="time">
+                        <h2>
+                            15<br><span>NOV</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                          OPENCV
+                        </h3>
+                      
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+				<li>
+                    <div class="time">
+                        <h2>
+                            16<br><span>NOV</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            TKINTER
+                        </h3>
+                      
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+				<li>
+                    <div class="time">
+                        <h2>
+                            17<br><span>NOV</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            FLASK
+                        </h3>
+                      
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            18<br><span>NOV</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            GEN AI
+                        </h3>
+                      
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            19<br><span>NOV</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            SURPRISE ELEMENT
+                        </h3>
+                      
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
 	<!-- Used SVG-icons -->

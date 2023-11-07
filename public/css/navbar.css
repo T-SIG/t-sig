@@ -18,6 +18,11 @@
 
 @media(max-width:480px)
 {
+	#video {
+		width: 100%;
+		height: 400px;
+		display: block;
+	  }
     .ham{
         display: block;
         padding: 20px 30px 0px 0px;
@@ -58,7 +63,7 @@ nav {
 	top: 0;
 	height: 70px;
 	padding: 0 1.5em;
-	background-color: rgb(255, 255, 255);
+	background-color: #121212;
 	font-family: 'Montserrat', sans-serif;
 }
 nav .logo {
@@ -81,7 +86,7 @@ nav .nav-item > a {
 	display: inline-block;
 	padding: 0 1.5em;
 	line-height: 70px;
-	color: #000;
+	color: #edf2fc;
 	text-decoration: none;
 }
 nav .nav-item > a:hover
@@ -113,7 +118,7 @@ nav .dropdown-menu {
 	
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	/* border-radius: .5em; */
-	background-color: #fff;
+	background-color: #212121;
 }
 nav .dropdown.show .dropdown-menu {
 	display: block;
@@ -127,13 +132,14 @@ nav .dropdown-item {
 	
 	/* font-size: 13px; */
 	padding: 10px 0px 10px 0px;
-	color: #000;
+	color: #edf2fc;
 	width: 200px;
 	
 	text-decoration: none;
 }
 nav .dropdown-item:hover{
-	background-color: rgb(150, 197, 197);
+	background-image: linear-gradient(62deg, #797535de 0%, #a17f22cd 100%);
+	color: #edf2fc;
 }
 nav .btn-hamburger {
 	display: none;
@@ -150,7 +156,7 @@ nav .btn-hamburger span {
 	display: block;
 	width: 30px;
 	height: 4px;
-	background-color: rgb(0, 0, 0);
+	background-color: #edf2fc;
 	margin: 6px;
 	border-radius: 2px;
 	transition: .3s ease-in-out;
@@ -181,6 +187,12 @@ nav.opened .btn-hamburger span:nth-child(3) {
 	opacity: 0;
 }
 @media screen and (max-width: 500px) {
+	#video {
+		width: 100%;
+		height: 400px !important;
+		display: block;
+	  }
+	 
 	nav .nav-menu {
 		position: fixed;
 		left: 0;
@@ -239,7 +251,7 @@ nav .dropdown-item {
 	text-decoration: none;
 }
 }
-.video{
+/* .video{
   
     width: 100%;
     height: 100%;
@@ -252,7 +264,20 @@ video#video{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
+.video {
+	max-width: 100%;
+	height: auto;
+	overflow:auto;
+	position: relative;
+  }
+  
+  #video {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+  
 .vid{
 	z-index: -999;
 	display: flex !important;
