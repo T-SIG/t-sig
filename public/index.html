@@ -37,6 +37,7 @@
   <link rel="stylesheet" type="text/css" href="css/blocks.css">
   <link rel="stylesheet" type="text/css" href="css/widgets.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="index.css">
 
   <!--External fonts-->
 
@@ -128,10 +129,23 @@
     })
   </script>
 	<div class="video">
-    <video id="video" autoplay loop muted>
+    <!-- <video id="video" autoplay loop muted>
       <source src="./img/Cadism teaser.mp4" style="width: 500px;" type="video/mp4" />
-    </video>
+    </video> -->
+    <img id="banner" class="bannerImg" src="./img/pyweek-banner.jpg" alt="">
+    <a href="https://forms.gle/4rBVfsabBsvB6zWu7" target="_blank">Register Here for PyWeek</a>
   </div>
+
+  <script>
+    let banner = document.getElementById("banner");
+    window.addEventListener('resize', ()=>{
+      if(window.innerWidth < 500){
+        banner.src = "./img/pyweek-poster.png";
+      }else{  
+        banner.src = "./img/pyweek-banner.jpg";
+      }
+    })
+  </script>
 
 
   <!-- <video class="vid" id="vid" width="100%" height="100%" poster="./img/thumbnail.png" autoplay muted loop>
@@ -226,8 +240,8 @@
             <div class="info-box-content">
               <a href="fsd.html" class="h5 info-box-title">Full Stack Development</a>
               <p class="info-box-text">We are called as the best web developers in our college for a reason. We have a
-                team of highly skilled developers who excell in providing clean code and user friendly design.This group
-                helps you you teach this course from scratch to th the advance level.
+                team of highly skilled developers who excel in providing clean code and user friendly design. This group
+                helps you you teach this course from scratch to the advance level.
               </p>
             </div>
 

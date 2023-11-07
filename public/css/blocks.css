@@ -60,6 +60,7 @@
   .nice-select:after {
     border-bottom: 2px solid #ccc;
     border-right: 2px solid #ccc;
+    
     content: '';
     display: block;
     height: 10px;
