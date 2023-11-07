@@ -49,6 +49,66 @@
             margin: 0;
             padding: 0;
         }
+		header button{
+			position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:white;
+  color: rgb(7, 7, 70);
+  font-weight: 600;
+  font-size: 40px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+		}
+		header h2{
+			position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+		
+		header button:hover{
+			background: rgb(7, 7, 70)  ;
+			color: white;
+		}
         /* Styling section, giving background
             image and dimensions */
         section {
@@ -116,6 +176,14 @@ margin-left: 120px;
 		@media(max-width:1200px)
 
 {
+	header h2{
+		font-size: 95px;
+		top:40%
+	}
+	header button{
+		width: 90%;
+		top: 75%;
+	}
 	body{
 		height: 100%;
 		background: url(./img/pyweek2.0/2023-11-07\ \(29\).png);
@@ -366,10 +434,11 @@ margin-left: 120px;
 
 
 		<!-- Tripple Image -->
-		<!-- <header>
+		<header>
 			
-				<img src="./img/upcoming events.png" alt="upcoming events page">
-				<div class="header-info-par"> -->
+				<h2>PYWEEK 2.O</h2>
+		<a href="https://forms.gle/4rBVfsabBsvB6zWu7"><button>REGISTER NOW</button></a>		
+				<div class="header-info-par"> 
 					<!-- <h1 class="typewrite" data-period="2000"
 						data-type='["We Help You To Recover It Back","I fly because it releases my mind from the tyranny of petty things.","Every takeoff is optional, Every landing is mandatory."]'>
 					</h1>
@@ -377,12 +446,12 @@ margin-left: 120px;
 					<h4 class="text">Register for the CADISM workshop</h4>
 					<a href="https://forms.gle/VSRkzi1GnCGSYDTX9" class="a"> Register Now </a>
 				</div> -->
-				<!-- <div class="video">
+				 <!-- <div class="video">
 					<video id="video" autoplay loop muted>
 						<source src="./img/Cadism teaser.mp4" style="width: 500px;" type="video/mp4" />
-					</video>
-				</div> -->
-		<!-- </header> -->
+					</video> -->
+				</div> 
+		</header>
 
 
 		<!-- <section class="bg-blue-lighteen bg-11 background-contain"
