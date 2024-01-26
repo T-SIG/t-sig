@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../public/css/answers.css" />
+  <script src="../public/js/answers.js" defer></script>
+  <title>TSIG recruiting</title>
+</head>
+
+<body>
+  <div class="answers">
+    <!-- <h1>Welcome to TSIG</h1> -->
+    <!-- <p>Enter the answer for the question</p> -->
+    <div class="container">
+      <div class="header">
+        <div class="circles" style="background-color: #FF605C;"></div>
+        <div class="circles" style="background-color: #FFBD44;"></div>
+        <div class="circles" style="background-color: #00CA4E;"></div>
+      </div>
+      <div class="ans" id="ans1">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int a = 5, b = 10;
+    printf("%d", a++ + ++b);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput1" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(1)">Submit</button>
+          </div>
+          <div id="tickContainer1"></div>
+          <p id="msg1"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans2">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int num = 7;
+    printf("%d", num++ * 2);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput2" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(2)">Submit</button>
+          </div>
+          <div id="tickContainer2"></div>
+          <p id="msg2"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans3">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int p = 15, q = 10;
+    printf("%d", p > q ? p : q);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput3" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(3)">Submit</button>
+          </div>
+          <div id="tickContainer3"></div>
+          <p id="msg3"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans4">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int m = 8, n = 3;
+    printf("%d", m / n);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput4" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(4)">Submit</button>
+          </div>
+          <div id="tickContainer4"></div>
+          <p id="msg4"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans5">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int x = 5, y = 2;
+    printf("%d", x % y);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput5" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(5)">Submit</button>
+          </div>
+          <div id="tickContainer5"></div>
+          <p id="msg5"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans6">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int a = 3, b = 4;
+    printf("%d", a + b * 2);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput6" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(6)">Submit</button>
+          </div>
+          <div id="tickContainer6"></div>
+          <p id="msg6"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans7">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int num = 25;
+    printf("%c", num);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput7" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(7)">Submit</button>
+          </div>
+          <div id="tickContainer7"></div>
+          <p id="msg7"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans8">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int a = 2, b = 3;
+    printf("%d", a += b * 2);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput8" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(8)">Submit</button>
+          </div>
+          <div id="tickContainer8"></div>
+          <p id="msg8"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans9">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int num = 42;
+    printf("%o", num);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput9" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(9)">Submit</button>
+          </div>
+          <div id="tickContainer9"></div>
+          <p id="msg9"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans10">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int num = 87;
+    printf("%02d", num);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput10" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(10)">Submit</button>
+          </div>
+          <div id="tickContainer10"></div>
+          <p id="msg10"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans11">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int i = 1;
+    printf("%d", i << 2);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput11" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(11)">Submit</button>
+          </div>
+          <div id="tickContainer11"></div>
+          <p id="msg11"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans12">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int x = 7, y = 3;
+    printf("%d", x & y);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput12" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(12)">Submit</button>
+          </div>
+          <div id="tickContainer12"></div>
+          <p id="msg12"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans13">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int a = 5, b = 2;
+    printf("%d", a | b);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput13" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(13)">Submit</button>
+          </div>
+          <div id="tickContainer13"></div>
+          <p id="msg13"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans14">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int num = 16;
+    printf("%x", num);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput14" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(14)">Submit</button>
+          </div>
+          <div id="tickContainer14"></div>
+          <p id="msg14"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans15">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    char c = 'A';
+    printf("%d", c);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput15" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(15)">Submit</button>
+          </div>
+          <div id="tickContainer15"></div>
+          <p id="msg15"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans16">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int x = 3, y = 4;
+    printf("%d", x < y ? x : y);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput16" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(16)">Submit</button>
+          </div>
+          <div id="tickContainer16"></div>
+          <p id="msg16"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans17">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int a = 6, b = 3;
+    printf("%d", a /= b);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput17" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(17)">Submit</button>
+          </div>
+          <div id="tickContainer17"></div>
+          <p id="msg17"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans18">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int asciiValue = 97;
+    printf("%c", asciiValue);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput18" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(18)">Submit</button>
+          </div>
+          <div id="tickContainer18"></div>
+          <p id="msg18"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans19">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int x = 5, y = 2;
+    printf("%d", x % y == 0 ? 1 : 0);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput19" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(19)">Submit</button>
+          </div>
+          <div id="tickContainer19"></div>
+          <p id="msg19"></p>
+        </form>
+      </div>
+      <div class="ans" id="ans20">
+        <pre>
+              <code>
+  #include &lt;stdio.h&gt;  
+  int main() {
+    int i = 3;
+    printf("%d", i++);
+  }
+              </code>
+          </pre>
+        <form action="">
+          <div class="things">
+            <input type="text" id="answerInput20" placeholder="Enter your answer here" value="" />
+            <button onclick="checkAnswer(20)">Submit</button>
+          </div>
+          <div id="tickContainer20"></div>
+          <p id="msg20"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
