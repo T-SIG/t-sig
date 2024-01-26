@@ -39,9 +39,9 @@ let answers = {
 function checkAnswer(qno) {
   let val = document.getElementById(`answerInput${qno}`).value;
   let greenTick = document.createElement("img");
-  greenTick.src = "/public/img/tick.gif";
+  greenTick.src = "/img/tick.gif";
   let redTick = document.createElement("img");
-  redTick.src = "/public/img/wrong.gif";
+  redTick.src = "/img/wrong.gif";
 
   if (val == answers[qno]) {
     let tickContainer = document.getElementById(`tickContainer${qno}`);
