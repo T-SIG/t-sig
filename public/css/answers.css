@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: white;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Inter", sans-serif;
+}
+
+div.answers {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  backdrop-filter: blur(5px) saturate(160%);
+  -webkit-backdrop-filter: blur(5px) saturate(160%);
+  background-color: rgba(17, 25, 40, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+div.answers div.container {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  border: 2px solid rgba(74, 85, 104, 0.3);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  width: 30vw;
+
+  @media (min-width: 280px) and (max-width: 768px) {
+    width: 90%;
+    height: fit-content;
+  }
+}
+
+div.header {
+  width: 100%;
+  border-bottom: 2px solid rgba(74, 85, 104, 0.3);
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding: 0.75rem;
+}
+
+div.header div.circles {
+  width: 0.800rem;
+  height: 0.800rem;
+  background-color: #4a5568;
+  border-radius: 50%;
+  margin-right: 0.400rem;
+
+}
+
+/* div.answers p {
+  font-size: 2rem;
+  margin: 20px;
+  @media (min-width: 280px) and (max-width: 768px) {
+    font-size: 1.5rem;
+    text-align: center;
+  
+  }
+} */
+
+div.container div.ans {
+  font-size: 1.2rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.ans pre code {
+  background-color: transparent;
+  text-align: left;
+  line-height: 1.5;
+  @media (min-width: 280px) and (max-width: 768px) {
+    font-size: 1rem;
+    padding: 10px;
+    
+  }
+
+}
+
+div.ans form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 280px) and (max-width: 768px) {
+    flex-direction: column;
+    
+  }
+}
+form div.things{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 280px) and (max-width: 768px) {
+    flex-direction: column;
+    
+  }
+
+}
+form p{
+  font-size: 1rem;
+  margin: 20px;
+  font-style: italic;
+  @media (min-width: 280px) and (max-width: 768px) {
+    font-size: 1rem;
+    text-align: center;
+  
+  }
+
+}
+
+form a{
+  font-size: 1rem;
+  margin: 20px;
+  background-color: green;
+  color: azure;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  @media (min-width: 280px) and (max-width: 768px) {
+    font-size: 1rem;
+    text-align: center;
+  
+  }
+
+
+}
+form div.things input {
+  /* width: 80%; */
+  height: 50px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  outline: none;
+  margin-bottom: 20px;
+  @media (min-width: 280px) and (max-width: 768px) {
+    
+    border-radius: 5px;
+  }
+}
+
+form div.things button {
+  /* width: 40%; */
+  height: 50px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: rgb(14 165 233);
+  color: white;
+  cursor: pointer;
+  @media (min-width: 280px) and (max-width: 768px) {
+    
+    border-radius: 5px;
+  }
+}
+
+/*# sourceMappingURL=answers.css.map */
