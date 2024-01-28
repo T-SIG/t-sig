@@ -18,27 +18,18 @@ div.home {
 div.home p.text {
     /* color: #fff; */
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Noto Sans Display", sans-serif;
     text-align: center;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
-div.home p.last {
-    /* color: #fff; */
-    font-size: 2rem;
-    font-weight: 300;
-    font-family: "Noto Sans Display", sans-serif;
-    text-align: center;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
 
-span.tsig {
+div.home span.tsig {
     /* color: #fff; */
     font-size: 7rem;
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Noto Sans Display", sans-serif;
     text-align: center;
     background: linear-gradient(to bottom right,
@@ -53,29 +44,20 @@ span.tsig {
     animation: textShine 3s ease-in-out infinite alternate;
 }
 
-/* @keyframes textShine {
-    0% {
-        background-position: 100% 0%;
-    }
-
-    100% {
-        background-position: 0% 100%;
-    }
-} */
 
 @keyframes textShine {
     0% {
-        
+
         background-position: 100% 0%;
     }
 
     50% {
-        
+
         background-position: 0% 100%;
     }
 
     100% {
-        
+
         background-position: 100% 0%;
     }
 }
@@ -89,7 +71,7 @@ div.home div.down {
 }
 
 div.down a {
-    margin: 10px;
+    /* margin: 10px;
     background-color: transparent;
     color: black;
     font-size: 1.5rem;
@@ -98,9 +80,125 @@ div.down a {
     padding: 10px 20px;
     border: white 2px solid;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; */
 
+
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
 }
+
+div.down a:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+a:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+a:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
 
 div.down p.last {
     font-size: 2rem;
@@ -108,27 +206,29 @@ div.down p.last {
     font-family: "Noto Sans Display", sans-serif;
     text-align: center;
     margin: 1rem;
-
+    font-style: italic;
 }
 
 a i {
     font-size: 3rem;
     color: #FFF;
-    
+
 }
 
 
 @media (min-width: 270px) and (max-width: 768px) {
     div.home p.text {
         font-size: 3rem;
+        
     }
 
-    div.home p.last {
-        font-size: 1rem;
+    div.down p.last {
+        font-size: 1.5rem;
     }
 
-    span.tsig {
+    div.home span.tsig {
         font-size: 4rem;
+        
     }
 
     div.home a {
