@@ -12,11 +12,11 @@ div.home {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    color: #e8eaed;
 }
 
 div.home p.text {
-    color: #fff;
+    /* color: #fff; */
     font-size: 6rem;
     font-weight: 400;
     font-family: "Noto Sans Display", sans-serif;
@@ -26,7 +26,7 @@ div.home p.text {
 }
 
 div.home p.last {
-    color: #fff;
+    /* color: #fff; */
     font-size: 2rem;
     font-weight: 300;
     font-family: "Noto Sans Display", sans-serif;
@@ -36,17 +36,15 @@ div.home p.last {
 }
 
 span.tsig {
-    color: #fff;
+    /* color: #fff; */
     font-size: 7rem;
     font-weight: 400;
     font-family: "Noto Sans Display", sans-serif;
     text-align: center;
     background: linear-gradient(to bottom right,
-            #FFFFFF 0%,
-            #FFEA61 25%,
-            #FFEA61 50%,
-            #FFFFB7 75%,
-            #FFD400 100%);
+            #086FFF 0%,
+            #FFDDB7 50%,
+            #086FFF 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -55,7 +53,7 @@ span.tsig {
     animation: textShine 3s ease-in-out infinite alternate;
 }
 
-@keyframes textShine {
+/* @keyframes textShine {
     0% {
         background-position: 100% 0%;
     }
@@ -63,16 +61,34 @@ span.tsig {
     100% {
         background-position: 0% 100%;
     }
+} */
+
+@keyframes textShine {
+    0% {
+        
+        background-position: 100% 0%;
+    }
+
+    50% {
+        
+        background-position: 0% 100%;
+    }
+
+    100% {
+        
+        background-position: 100% 0%;
+    }
 }
 
-div.home div.down{
+div.home div.down {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+
 }
-div.down a{
+
+div.down a {
     margin: 10px;
     background-color: transparent;
     color: black;
@@ -80,13 +96,13 @@ div.down a{
     font-weight: 400;
     font-family: "Noto Sans Display", sans-serif;
     padding: 10px 20px;
-    border: white 2px 
-    solid;
+    border: white 2px solid;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    
+
 }
-div.down p.last{
+
+div.down p.last {
     font-size: 2rem;
     font-weight: 400;
     font-family: "Noto Sans Display", sans-serif;
@@ -94,9 +110,11 @@ div.down p.last{
     margin: 1rem;
 
 }
-a i{
+
+a i {
     font-size: 3rem;
     color: #FFF;
+    
 }
 
 
